@@ -14,18 +14,13 @@ export const CONFIG = {
   socials: [
     {
       label: "Instagram",
-      url: "https://instagram.com/decidedtohateyou",
+      url: "https://instagram.com/wosindmenschen",
       icon: "ri-instagram-line",
     },
     {
       label: "TikTok",
-      url: "https://tiktok.com/@decidedtohateyou",
+      url: "https://tiktok.com/@wosindmenschen",
       icon: "ri-tiktok-line",
-    },
-    {
-      label: "GitHub",
-      url: "https://github.com/decidedtohateyou",
-      icon: "ri-github-line",
     },
   ],
 };
