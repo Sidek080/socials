@@ -6,8 +6,8 @@ export const CONFIG = {
     pollInterval: 60000,
   },
   discord: {
-    userId: "YOUR_DISCORD_USER_ID",
-    username: "decidedtohateyou#0000",
+    userId: "1098267680638767125",
+    username: "decidedtohateyou",
     avatarFallback: "https://cdn.discordapp.com/embed/avatars/0.png",
     pollInterval: 45000,
   },
