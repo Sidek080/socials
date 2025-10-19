@@ -1,1 +1,76 @@
-t
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>decidedtohateyou | dossier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video id="background-video" autoplay loop muted playsinline>
+      <source
+        src="https://cdn.coverr.co/videos/coverr-smoke-on-black-1605867285415?download=1"
+        type="video/mp4"
+      />
+    </video>
+
+    <div class="film-noise" aria-hidden="true"></div>
+
+    <main class="card" role="main">
+      <header class="identity">
+        <p class="tagline">classified dossier</p>
+        <h1 class="username" data-text="decidedtohateyou">decidedtohateyou</h1>
+        <p class="subtitle">grayscale signal • private circuit</p>
+      </header>
+
+      <section class="intel" id="spotify" aria-live="polite">
+        <header class="intel-head">
+          <span class="section-label">spotify feed</span>
+          <span id="spotify-state" class="signal-dot" data-state="idle" aria-hidden="true"></span>
+        </header>
+        <p class="meta">channel <span id="spotify-track">—</span></p>
+        <p class="details" id="spotify-artist">waiting for playback</p>
+      </section>
+
+      <section class="intel" id="discord" aria-live="polite">
+        <header class="intel-head">
+          <span class="section-label">discord presence</span>
+          <span id="discord-status" class="status-indicator offline" data-status="offline">offline</span>
+        </header>
+        <div class="discord-body">
+          <div class="avatar-frame">
+            <img id="discord-avatar" alt="Discord avatar" />
+          </div>
+          <div class="content">
+            <p class="meta" id="discord-tag">—</p>
+            <p class="details" id="discord-activity">no active transmission</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="intel" id="social-links">
+        <header class="intel-head">
+          <span class="section-label">signal relays</span>
+        </header>
+        <ul class="social-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Last sync</span>
+      <span id="last-sync">never</span>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
